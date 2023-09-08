@@ -25,7 +25,7 @@ data "aws_iam_policy_document" "first" {
 }
 
 data "aws_iam_policy_document" "second" {
-  override_json = data.aws_iam_policy_document.first.id
+  override_json = data.aws_iam_policy_document.first.json
 
   statement {
     actions = ["ec2:*"]
