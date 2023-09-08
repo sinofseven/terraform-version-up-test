@@ -1,9 +1,9 @@
 terraform {
   backend "remote" {
-    organization = ""
+    organization = "cm-natsume-yuta"
 
     workspaces {
-      name = ""
+      name = "terraform-version-up-test"
     }
   }
 
