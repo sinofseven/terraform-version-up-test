@@ -12,6 +12,10 @@ terraform {
   }
 }
 
+provider "aws" {
+  region = "ap-northeast-1"
+}
+
 data "aws_iam_policy_document" "first" {
   statement {
     sid = "SidToOverride"
