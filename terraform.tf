@@ -41,3 +41,5 @@ data "aws_iam_policy_document" "second" {
     ]
   }
 }
+
+resource "aws_sns_topic" "name" {}
